@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore Gokarna, Dandeli and North Kerala adventures with Sanchari Hub, Bengaluru.">
+  <title>Sanchari Hub | Your Next Adventure Starts Here</title>
+  <style>
+    :root { --forest:#173b2c; --forest2:#24543c; --gold:#d9b56c; --cream:#faf7ef; --ink:#25392d; }
+    * {box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--cream);color:var(--ink);line-height:1.6}
+    a{color:inherit} header{background:var(--forest);color:white;padding:12px max(5%,calc((100% - 1180px)/2));display:flex;align-items:center;justify-content:space-between;gap:22px;flex-wrap:wrap}
+    .brand{display:flex;align-items:center;gap:14px;color:white;text-decoration:none;font-weight:800;letter-spacing:1.2px;font-size:21px}
+    .brand img{width:78px;height:78px;object-fit:contain;background:white;border-radius:12px;padding:4px}
+    nav{display:flex;gap:22px;flex-wrap:wrap} nav a{text-decoration:none;font-weight:600;font-size:14px} nav a:hover{text-decoration:underline}
+    .hero{min-height:490px;display:grid;place-items:center;text-align:center;padding:70px 20px;color:white;background:linear-gradient(125deg,rgba(11,41,28,.92),rgba(17,67,47,.65)),url('images/gokarna.jpg') center/cover}
+    .hero-inner{max-width:790px}.eyebrow{text-transform:uppercase;letter-spacing:3px;font-size:13px;color:#f0d59e;font-weight:bold}
+    h1{font-size:clamp(37px,6vw,67px);line-height:1.1;margin:18px 0} .hero p{font-size:19px;margin-bottom:28px}
+    .btn{display:inline-block;background:var(--gold);color:#173b2c;border-radius:8px;padding:13px 22px;font-weight:800;text-decoration:none;border:0;cursor:pointer} .btn:hover{background:#e8c88a}
+    section{padding:68px 6%} .wrap{max-width:1180px;margin:auto} .section-head{text-align:center;margin-bottom:30px} .section-head h2{font-size:clamp(27px,4vw,39px);margin:0 0 7px}.section-head p{margin:0;color:#617066}
+    .cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:25px}.card{background:white;border-radius:17px;overflow:hidden;box-shadow:0 9px 32px #142c2115;display:flex;flex-direction:column}
+    .photo{height:235px;background:linear-gradient(145deg,#447e69,#b8a66b);display:grid;place-items:center;position:relative}.photo img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}.photo span{color:white;font-size:58px}
+    .card-body{padding:23px;display:flex;flex-direction:column;flex:1}.card h3{margin:0 0 7px;font-size:23px}.card p{margin:5px 0;color:#5c685e}.tag{font-size:13px;font-weight:bold;color:var(--forest2)}.price{font-size:25px;font-weight:800;color:#946c24;margin:12px 0}.card .btn{margin-top:auto;text-align:center}
+    .about{background:#e9efe8}.about-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:38px;align-items:center}.about h2{font-size:36px;margin:0 0 12px}.features{display:grid;gap:12px}.feature{background:white;padding:17px 19px;border-radius:12px;font-weight:700}
+    .reviews{background:#fffaf0}.review-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;margin-top:28px}.review-card{background:white;border:1px solid #e5e4d8;border-radius:16px;padding:25px;text-align:left;box-shadow:0 6px 18px #173b2c0a}.review-card h3{margin:0 0 8px;font-size:18px}.review-card p{color:#5d695f;margin:0 0 16px}.review-note{color:#657166;font-size:14px;text-align:center;max-width:720px;margin:22px auto}.review-actions{text-align:center;margin-top:24px}
+    .review-form{max-width:680px;margin:30px auto 0;background:white;padding:26px;border-radius:16px;border:1px solid #e5e4d8;display:grid;gap:12px;text-align:left}
+    .review-form label{font-weight:700}.review-form input,.review-form select,.review-form textarea{font:inherit;width:100%;padding:12px;border:1px solid #b9c5bc;border-radius:8px}.review-form textarea{min-height:115px;resize:vertical}
+    .star-choices{display:flex;gap:5px}.star-choices button{border:0;background:none;font-size:35px;color:#9b9b9b;cursor:pointer;padding:2px 6px}.star-choices button.selected{color:#d49b2c}.review-stars{color:#d49b2c;font-size:21px;letter-spacing:2px}.review-meta{font-size:13px;color:#667369}.review-message{font-size:14px;min-height:22px}.rating-summary{text-align:center;font-size:17px;font-weight:700}.review-card p{overflow-wrap:anywhere;white-space:pre-wrap}
+    .contact{text-align:center}.contact-links{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:25px}.contact-links a{padding:11px 18px;border:1px solid #a9b8ad;border-radius:8px;text-decoration:none}
+    footer{background:var(--forest);color:white;text-align:center;padding:24px 15px;font-size:14px}.float{position:fixed;bottom:20px;right:20px;background:#25d366;color:#083b1d;text-decoration:none;font-weight:800;border-radius:50px;padding:13px 19px;box-shadow:0 5px 20px #0003;z-index:20}
+    @media(max-width:800px){header{justify-content:center;text-align:center}nav{justify-content:center;gap:14px}.cards{grid-template-columns:1fr;max-width:500px;margin:auto}.review-grid{grid-template-columns:1fr}.about-grid{grid-template-columns:1fr}.hero{min-height:420px}.brand img{width:65px;height:65px}section{padding:48px 5%}}
+  </style>
+</head>
+<body>
+  <header id="home">
+    <a class="brand" href="#home"><img src="images/sanchari-logo.jpeg" alt="Sanchari Hub official logo"><span>SANCHARI HUB</span></a>
+    <nav aria-label="Main navigation"><a href="#home">Home</a><a href="#packages">Packages</a><a href="#about">About Us</a><a href="#reviews">Reviews</a><a href="#contact">Contact</a></nav>
+  </header>
+  <main>
+    <div class="hero"><div class="hero-inner"><div class="eyebrow">Explore more • Spend less • Travel better</div><h1>Your Next Adventure Starts Here.</h1><p>Unforgettable beach escapes, wild adventures and cultural journeys from Bengaluru.</p><a class="btn" href="#packages">Explore Our Trips ↓</a></div></div>
+    <section id="packages"><div class="wrap"><div class="section-head"><h2>Explore Our Tour Packages</h2><p>Find your next story with Sanchari Hub</p></div><div class="cards">
+      <article class="card"><div class="photo"><span>🏖️</span><img src="images/gokarna.jpg" alt="Gokarna beach" onerror="this.style.display='none'"></div><div class="card-body"><div class="tag">BEACH ESCAPE • 2 DAYS / 1 NIGHT</div><h3>Gokarna</h3><p>Coastal views, beautiful beaches and sunset memories.</p><div class="price">₹3,999 <small style="font-size:13px;color:#657166">/ person*</small></div><a class="btn booking" data-trip="Gokarna" href="#contact">Enquire on WhatsApp</a></div></article>
+      <article class="card"><div class="photo"><span>🌿</span><img src="images/dandeli.jpg" alt="Dandeli adventure" onerror="this.style.display='none'"></div><div class="card-body"><div class="tag">ADVENTURE • 2 DAYS / 1 NIGHT</div><h3>Dandeli</h3><p>Nature, camping and thrilling river experiences.</p><div class="price">₹3,999 <small style="font-size:13px;color:#657166">/ person*</small></div><a class="btn booking" data-trip="Dandeli" href="#contact">Enquire on WhatsApp</a></div></article>
+      <article class="card"><div class="photo"><span>🎭</span><img src="images/theyyam.jpg" alt="Traditional Kerala Theyyam performance" onerror="this.style.display='none'"></div><div class="card-body"><div class="tag">CULTURE • 2 DAYS / 1 NIGHT</div><h3>Kerala Theyyam</h3><p>Discover North Kerala's living ritual traditions.</p><div class="price">₹4,999 <small style="font-size:13px;color:#657166">/ person*</small></div><a class="btn booking" data-trip="Kerala Theyyam" href="#contact">Enquire on WhatsApp</a></div></article>
+    </div><p style="text-align:center;font-size:13px;color:#6c746c;margin-top:22px">*Sample prices, subject to confirmation. Theyyam performance dates must be verified before booking.</p></div></section>
+    <section class="about" id="about"><div class="wrap about-grid"><div><div class="eyebrow" style="color:#977130">ABOUT OUR JOURNEY</div><h2>Travel Far. Feel More.</h2><p>Sanchari Hub is a Bengaluru-based travel brand focused on affordable, memorable experiences. Whether you love beaches, adventurous weekends or cultural discovery, we're here to help you explore.</p></div><div class="features"><div class="feature">✓ Budget-friendly travel experiences</div><div class="feature">✓ Nature, adventure and culture</div><div class="feature">✓ Easy enquiries through WhatsApp</div></div></div></section>
+    <section class="reviews" id="reviews"><div class="wrap">
+      <div class="section-head"><h2>Traveler Reviews</h2><p>Real experiences shared by our travelers</p></div>
+      <p class="rating-summary" id="rating-summary">Customer ratings will appear here once reviews are approved.</p>
+      <div class="review-grid" id="review-grid"><article class="review-card"><h3>Reviews coming soon</h3><p>Be the first to share your travel experience!</p></article></div>
+      <form class="review-form" id="review-form">
+        <h3 style="margin:0">Share Your Experience</h3>
+        <label for="review-name">Your name</label><input id="review-name" maxlength="60" required placeholder="Enter your name">
+        <label for="review-trip">Which trip did you take?</label><select id="review-trip" required><option value="">Select a destination</option><option>Gokarna</option><option>Dandeli</option><option>Kerala Theyyam</option><option>Other trip</option></select>
+        <label>How would you rate your trip?</label>
+        <div class="star-choices" id="star-choices" aria-label="Choose a star rating"><button type="button" data-rating="1" aria-label="1 star">★</button><button type="button" data-rating="2" aria-label="2 stars">★</button><button type="button" data-rating="3" aria-label="3 stars">★</button><button type="button" data-rating="4" aria-label="4 stars">★</button><button type="button" data-rating="5" aria-label="5 stars">★</button></div>
+        <label for="review-text">Your experience</label><textarea id="review-text" maxlength="1000" minlength="10" required placeholder="Tell other travelers about your experience..."></textarea>
+        <label style="font-weight:normal;font-size:14px"><input id="review-consent" type="checkbox" required style="width:auto"> I agree to have my name, rating, destination and review displayed publicly if approved.</label>
+        <button class="btn" type="submit" id="review-submit">Submit Review</button>
+        <div class="review-message" id="review-message" role="status" aria-live="polite"></div>
+        <p class="review-meta">Reviews are checked before publication. Honest positive and negative feedback is welcome. Please don't include phone numbers or private information.</p>
+      </form>
+    </div></section>
+    <section class="contact" id="contact"><div class="wrap"><div class="section-head"><h2>Let's Plan Your Next Trip</h2><p>Have a question? Get in touch with Sanchari Hub.</p></div><div class="contact-links"><a id="general-whatsapp" href="#contact">WhatsApp Enquiry</a><a href="https://www.instagram.com/sancharihub/" target="_blank" rel="noopener noreferrer">Instagram @sancharihub</a></div><p style="font-size:14px;color:#68766c">Based in Bengaluru, Karnataka • Add your business email and phone number here before publishing.</p></div></section>
+  </main>
+  <footer>© 2026 Sanchari Hub. All rights reserved.</footer>
+  <a class="float" id="floating-whatsapp" href="#contact">WhatsApp Chat</a>
+  <script>
+    // IMPORTANT: Replace the X characters with your WhatsApp business number.
+    // Example format for an Indian number: 919876543210 (do not add + or spaces).
+    const whatsappNumber = '918147805281';
+    const configured = /^\d{10,15}$/.test(whatsappNumber);
+    function whatsappLink(message) { return 'https://wa.me/' + whatsappNumber + '?text=' + encodeURIComponent(message); }
+    document.querySelectorAll('.booking').forEach(button => {
+      const trip = button.dataset.trip;
+      if (configured) { button.href = whatsappLink('Hi Sanchari Hub! I would like to enquire about the ' + trip + ' trip.'); button.target='_blank'; button.rel='noopener noreferrer'; }
+      else { button.textContent = 'Contact for Booking'; }
+    });
+    ['general-whatsapp','floating-whatsapp','review-whatsapp'].forEach(id => {
+      const link=document.getElementById(id);
+      if(configured){link.href=whatsappLink(id === 'review-whatsapp' ? 'Hi Sanchari Hub! I would like to share feedback about my trip.' : 'Hi Sanchari Hub! I would like to know about upcoming trips.');link.target='_blank';link.rel='noopener noreferrer';}
+    });
+  </script>
+  <script>
+    // FREE REVIEW DATABASE: Paste your Supabase Project URL and publishable/anon key below.
+    // Never put a Supabase service_role or secret key in this file.
+    const REVIEW_DB_URL = 'https://flkkitterrglkvqrzdgj.supabase.co/rest/v1/';
+    const REVIEW_DB_KEY = 'sb_publishable_6b3UMi2jiTxkKvkE4Ds3Ng_EelUWCOr';
+    const reviewsConfigured = REVIEW_DB_URL.startsWith('https://') && REVIEW_DB_KEY.length > 20;
+    let selectedRating = 0;
+    const reviewMessage = document.getElementById('review-message');
+    const starButtons = [...document.querySelectorAll('#star-choices button')];
+    starButtons.forEach(btn => btn.addEventListener('click', () => {
+      selectedRating = Number(btn.dataset.rating);
+      starButtons.forEach(star => {
+        const active = Number(star.dataset.rating) <= selectedRating;
+        star.classList.toggle('selected', active);
+        star.setAttribute('aria-pressed', String(active));
+      });
+    }));
+    function makeElement(tag, className, value) {
+      const el = document.createElement(tag);
+      if (className) el.className = className;
+      if (value !== undefined) el.textContent = value; // safe: no customer HTML injected
+      return el;
+    }
+    async function loadReviews() {
+      if (!reviewsConfigured) {
+        reviewMessage.textContent = 'Owner setup needed: connect the free review database before customers can submit reviews.';
+        document.getElementById('review-submit').disabled = true;
+        return;
+      }
+      try {
+        const response = await fetch(REVIEW_DB_URL + '/rest/v1/traveler_reviews?select=name,trip,rating,experience,created_at&approved=eq.true&order=created_at.desc&limit=60', {
+          headers: { apikey: REVIEW_DB_KEY, Authorization: 'Bearer ' + REVIEW_DB_KEY }
+        });
+        if (!response.ok) throw new Error('Could not load reviews');
+        const reviews = await response.json();
+        const grid = document.getElementById('review-grid');
+        grid.replaceChildren();
+        if (!reviews.length) {
+          const card = makeElement('article', 'review-card');
+          card.append(makeElement('h3', '', 'No published reviews yet'), makeElement('p', '', 'Be the first to share your experience.'));
+          grid.append(card);
+          return;
+        }
+        const avg = reviews.reduce((sum, review) => sum + review.rating, 0) / reviews.length;
+        document.getElementById('rating-summary').textContent = `★ ${avg.toFixed(1)} / 5 from ${reviews.length} published review${reviews.length === 1 ? '' : 's'} (most recent 60)`;
+        reviews.forEach(review => {
+          const card = makeElement('article', 'review-card');
+          card.append(makeElement('div', 'review-stars', '★'.repeat(review.rating) + '☆'.repeat(5-review.rating)), makeElement('h3', '', review.name), makeElement('div', 'review-meta', review.trip), makeElement('p', '', review.experience));
+          grid.append(card);
+        });
+      } catch (err) { reviewMessage.textContent = 'Reviews could not be loaded. Please try again later.'; }
+    }
+    document.getElementById('review-form').addEventListener('submit', async event => {
+      event.preventDefault();
+      if (!reviewsConfigured) return;
+      if (!selectedRating) { reviewMessage.textContent = 'Please select a star rating.'; return; }
+      const button = document.getElementById('review-submit');
+      button.disabled = true;
+      reviewMessage.textContent = 'Submitting your review...';
+      const payload = {
+        name: document.getElementById('review-name').value.trim(),
+        trip: document.getElementById('review-trip').value,
+        rating: selectedRating,
+        experience: document.getElementById('review-text').value.trim()
+      };
+      try {
+        const response = await fetch(REVIEW_DB_URL + '/rest/v1/traveler_reviews', {
+          method: 'POST',
+          headers: { apikey: REVIEW_DB_KEY, Authorization: 'Bearer ' + REVIEW_DB_KEY, 'Content-Type': 'application/json', Prefer: 'return=minimal' },
+          body: JSON.stringify(payload)
+        });
+        if (!response.ok) throw new Error('Submission failed');
+        event.target.reset(); selectedRating = 0;
+        starButtons.forEach(btn => { btn.classList.remove('selected'); btn.setAttribute('aria-pressed', 'false'); });
+        reviewMessage.textContent = 'Thank you! Your review was submitted and will appear after approval.';
+      } catch (err) { reviewMessage.textContent = 'Could not submit. Please try again later.'; }
+      finally { button.disabled = false; }
+    });
+    loadReviews();
+  </script>
+
+<style>
+  .booking-section {
+    background: #f8f5ed;
+    padding: 60px 20px;
+    font-family: Arial, sans-serif;
+  }
+  .booking-container {
+    max-width: 550px;
+    margin: auto;
+    padding: 30px;
+    background: white;
+    border-radius: 18px;
+    box-shadow: 0 8px 30px #00000012;
+  }
+  .booking-container h2 {
+    color: #174c39;
+    text-align: center;
+  }
+  .booking-container p {
+    text-align: center;
+    color: #666;
+  }
+  .booking-container label {
+    display: block;
+    margin: 16px 0 6px;
+    font-weight: bold;
+  }
+  .booking-container input,
+  .booking-container select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font: inherit;
+  }
+  .booking-container button {
+    width: 100%;
+    margin-top: 24px;
+    padding: 14px;
+    background: #174c39;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+</style>
+
+<section id="booking" class="booking-section">
+  <div class="booking-container">
+    <h2>Book Your Next Adventure</h2>
+    <p>Fill in your details to enquire on WhatsApp.</p>
+
+    <form id="tripBookingForm">
+      <label for="customerName">Full Name</label>
+      <input id="customerName" required
+             placeholder="Enter your full name">
+
+      <label for="customerPhone">Phone Number</label>
+      <input id="customerPhone" type="tel" required
+             pattern="[0-9]{10}"
+             placeholder="10-digit mobile number">
+
+      <label for="tripDestination">Select Destination</label>
+      <select id="tripDestination" required>
+        <option value="">Choose your trip</option>
+        <option>Gokarna</option>
+        <option>Dandeli</option>
+        <option>Kerala Theyyam</option>
+        <option>Custom Trip</option>
+      </select>
+
+      <label for="travelDate">Travel Date</label>
+      <input id="travelDate" type="date" required>
+
+      <label for="travelerCount">Number of Travelers</label>
+      <input id="travelerCount" type="number"
+             min="1" max="100" value="1" required>
+
+      <button type="submit">
+        Send Booking Enquiry on WhatsApp
+      </button>
+    </form>
+  </div>
+</section>
+
+<script>
+  const bookingWhatsAppNumber = "918147805281";
+
+  const dateInput = document.getElementById("travelDate");
+  const today = new Date();
+  const localDate = new Date(
+    today.getTime() - today.getTimezoneOffset() * 60000
+  ).toISOString().slice(0, 10);
+  dateInput.min = localDate;
+
+  document.getElementById("tripBookingForm")
+    .addEventListener("submit", function(event) {
+      event.preventDefault();
+
+      const name = document.getElementById("customerName").value.trim();
+      const phone = document.getElementById("customerPhone").value.trim();
+      const destination = document.getElementById("tripDestination").value;
+      const date = document.getElementById("travelDate").value;
+      const travelers = document.getElementById("travelerCount").value;
+
+      const message =
+        "Hello Sanchari Hub! I would like to enquire about a trip.\n\n" +
+        "Name: " + name + "\n" +
+        "Phone: " + phone + "\n" +
+        "Destination: " + destination + "\n" +
+        "Travel Date: " + date + "\n" +
+        "Travelers: " + travelers + "\n\n" +
+        "Please share availability and booking details.";
+
+      const url = "https://wa.me/" +
+        bookingWhatsAppNumber +
+        "?text=" + encodeURIComponent(message);
+
+      window.open(url, "_blank", "noopener,noreferrer");
+    });
+</script>
+
+<script>
+document.querySelectorAll('a[href*="wa.me/"]').forEach(function(button) {
+  const card = button.closest(".package-card, .tour-card, .card");
+
+  if (!card) return;
+
+  const cardText = card.innerText.toLowerCase();
+  let destination = "";
+
+  if (cardText.includes("gokarna")) {
+    destination = "Gokarna";
+  } else if (cardText.includes("dandeli")) {
+    destination = "Dandeli";
+  } else if (cardText.includes("theyyam")) {
+    destination = "Kerala Theyyam";
+  }
+
+  if (!destination) return;
+
+  button.addEventListener("click", function(event) {
+    event.preventDefault();
+
+    const select = document.getElementById("tripDestination");
+    if (select) {
+      select.value = destination;
+      document.getElementById("booking").scrollIntoView({
+        behavior: "smooth"
+      });
+    }
+  });
+});
+</script>
+
+</body>
+</html>
