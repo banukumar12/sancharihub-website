@@ -1,3 +1,58 @@
+# Current website photography
+
+Current photos are hosted locally. The downloaded originals/Commons thumbnails are not locally edited; CSS crops them to fit the layout. Source, author, and license credits are also available in the website footer under **Photography credits**. Keep those credits and applicable licenses with reused images; CC BY-SA adaptations must retain the required license.
+
+## Gokarna Beach Trek — images/gokarna-trekkers.jpg
+
+- Scene: a visible group crossing coastal rocks on Paradise Beach Trail, Gokarna, Karnataka, India.
+- Photographer: **Sourabh.biswas003**.
+- Source: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:PXL_20260103_054657562.MP_Paradise_beach_gokarna_Paradise_Beach_Trail,_Gokarna,_Karnataka_581326_31.jpg).
+- License: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+- Local file: unmodified Commons-served 1920 × 1080 JPEG thumbnail; the original is 4032 × 2268. Display cropping only.
+
+## Individual Dandeli package — images/dandeli-adventure-hd.jpg
+
+- Scene: rafting in Dandeli, Karnataka, India.
+- Photographer: **Dandelikf**.
+- Source: [Wikimedia Commons, Rafti1](https://commons.wikimedia.org/wiki/File:Rafti1.jpg).
+- License: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+- Local file: unmodified original 1920 × 1252 JPEG. Display cropping only.
+
+## Combined trip and hero — images/combo-gokarna.jpg
+
+- Scene: sunset over the Arabian Sea at Kudle Beach, Gokarna, Karnataka, India.
+- Photographer: **Pranabandhu Nayak**.
+- Source: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Sunset_in_the_Arabian_sea,_Kudle_Beach,_Gokarna,_Karnataka.jpg).
+- License: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+- Local file: unmodified Commons-served 1920 × 1280 JPEG thumbnail of the 3456 × 2304 original. Display cropping only.
+- Distinct from the individual Gokarna Beach Trek photograph.
+
+## Combined trip — images/combo-dandeli.jpg
+
+- Scene: a rafting group on the Kali River between Ganeshgudi and Maulangi near Dandeli, Karnataka, India.
+- Photographer: **sarangib**.
+- Source: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Dandeli_river_rafting.jpg).
+- License: [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/).
+- Local file: unmodified Commons-served 1920 × 1308 JPEG thumbnail of the 3264 × 2224 original. Display cropping only.
+- Distinct from the individual Dandeli package photograph.
+
+## Scuba Diving — images/scuba-experience.jpg
+
+- Professional photograph: **Manta ray at Palmyra Atoll**.
+- Photographer: **Ryan Hagerty / U.S. Fish and Wildlife Service**.
+- Source: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Manta_ray_at_Palmyra_Atoll_(52922542711).jpg); [USFWS original publisher](https://www.flickr.com/photos/usfwspacific/52922542711).
+- Reuse status: **Public domain**, confirmed by the Commons `PD-USGov-FWS` template and passed Public Domain Mark review. Credit is retained voluntarily.
+- Local file: unmodified Commons-served 1920 × 1280 JPEG thumbnail of the 6720 × 4480 original. Display cropping only.
+- This is representative imagery from Palmyra Atoll National Wildlife Refuge. It does not establish the Sanchari Hub trip's location or guarantee marine-life sightings. The visible package caption and trip note identify it as illustrative.
+
+The logo, `Theyyam.jpg`, and the about-section `Gokarna.jpg` were supplied in the original repository. No new source/license claims are made for those pre-existing assets.
+
+---
+
+# Archived image set
+
+The credits below are preserved for older image files and previous website versions. Their historical usage descriptions refer to those earlier versions, not the current layout.
+
 # Package photo credits
 
 The website uses the following downloaded photographs. Files are not locally edited; the layout crops them to fit cards and the hero. Full-size links open the locally hosted copies. Keep the linked photographer/source and license credits visible when reusing the images.
