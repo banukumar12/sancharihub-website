@@ -19,7 +19,9 @@
     section{padding:68px 6%} .wrap{max-width:1180px;margin:auto} .section-head{text-align:center;margin-bottom:30px} .section-head h2{font-size:clamp(27px,4vw,39px);margin:0 0 7px}.section-head p{margin:0;color:#617066}
     .cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:25px}.card{background:white;border-radius:17px;overflow:hidden;box-shadow:0 9px 32px #142c2115;display:flex;flex-direction:column}
     .photo{height:300px;background:linear-gradient(145deg,#447e69,#b8a66b);display:grid;place-items:center;position:relative;overflow:hidden;text-decoration:none;flex-shrink:0}.photo img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}.photo>span{color:white;font-size:58px}.photo:focus-visible{outline:3px solid var(--gold);outline-offset:-3px}.photo .photo-caption{position:absolute;inset:auto 0 0;padding:35px 18px 15px;background:linear-gradient(transparent,#000b);font-size:16px;font-weight:700;display:flex;justify-content:space-between;align-items:end;gap:10px}.photo-caption small{font-size:12px;white-space:nowrap;font-weight:normal}.photo-theyyam img{object-position:center 35%}
+    .photo-combined{grid-template-columns:repeat(2,minmax(0,1fr));gap:3px}.photo-combined>a{display:block;width:100%;height:100%;position:relative}.photo-combined>a:focus-visible{outline:3px solid var(--gold);outline-offset:-3px}.photo-combined .photo-caption{pointer-events:none}
     .card-body{padding:23px;display:flex;flex-direction:column;flex:1}.card h3{margin:0 0 7px;font-size:23px}.card p{margin:5px 0;color:#5c685e}.tag{font-size:13px;font-weight:bold;color:var(--forest2)}.price{font-size:25px;font-weight:800;color:#946c24;margin:12px 0}.card .btn{margin-top:auto;text-align:center}
+    .card .photo-credit{font-size:12px;margin:0 0 12px}
     .about{background:#e9efe8}.about-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:38px;align-items:center}.about h2{font-size:36px;margin:0 0 12px}.features{display:grid;gap:12px}.feature{background:white;padding:17px 19px;border-radius:12px;font-weight:700}
     .reviews{background:#fffaf0}.review-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;margin-top:28px}.review-card{background:white;border:1px solid #e5e4d8;border-radius:16px;padding:25px;text-align:left;box-shadow:0 6px 18px #173b2c0a}.review-card h3{margin:0 0 8px;font-size:18px}.review-card p{color:#5d695f;margin:0 0 16px}.review-note{color:#657166;font-size:14px;text-align:center;max-width:720px;margin:22px auto}.review-actions{text-align:center;margin-top:24px}
     .review-form{max-width:680px;margin:30px auto 0;background:white;padding:26px;border-radius:16px;border:1px solid #e5e4d8;display:grid;gap:12px;text-align:left}
@@ -41,6 +43,8 @@
       <article class="card"><a class="photo" href="images/Gokarna.jpg" target="_blank" rel="noopener noreferrer" aria-label="View full-size Gokarna coastal trek photo"><span aria-hidden="true">🏖️</span><img src="images/Gokarna.jpg" alt="Travelers trekking along the rocky Gokarna coast beside the sea" width="1080" height="1080" loading="lazy" decoding="async" onerror="this.style.display='none'"><span class="photo-caption">Gokarna coast <small>View photo</small></span></a><div class="card-body"><div class="tag">BEACH ESCAPE • 2 DAYS / 1 NIGHT</div><h3>Gokarna</h3><p>Coastal views, beautiful beaches and sunset memories.</p><div class="price">₹3,999 <small style="font-size:13px;color:#657166">/ person*</small></div><a class="btn booking" data-trip="Gokarna" href="#contact">Enquire on WhatsApp</a></div></article>
       <article class="card"><a class="photo" href="images/Dandeli.jpg" target="_blank" rel="noopener noreferrer" aria-label="View full-size Dandeli river rafting photo"><span aria-hidden="true">🌿</span><img src="images/Dandeli.jpg" alt="A group rafting through white-water rapids surrounded by rocks and forest" width="500" height="500" loading="lazy" decoding="async" onerror="this.style.display='none'"><span class="photo-caption">Dandeli rafting <small>View photo</small></span></a><div class="card-body"><div class="tag">ADVENTURE • 2 DAYS / 1 NIGHT</div><h3>Dandeli</h3><p>Nature, camping and thrilling river experiences.</p><div class="price">₹3,999 <small style="font-size:13px;color:#657166">/ person*</small></div><a class="btn booking" data-trip="Dandeli" href="#contact">Enquire on WhatsApp</a></div></article>
       <article class="card"><a class="photo photo-theyyam" href="images/Theyyam.jpg" target="_blank" rel="noopener noreferrer" aria-label="View full-size Kerala Theyyam performance photo"><span aria-hidden="true">🎭</span><img src="images/Theyyam.jpg" alt="A Kerala Theyyam performer in an ornate red headdress surrounded by flames" width="452" height="678" loading="lazy" decoding="async" onerror="this.style.display='none'"><span class="photo-caption">Kerala Theyyam <small>View photo</small></span></a><div class="card-body"><div class="tag">CULTURE • 2 DAYS / 1 NIGHT</div><h3>Kerala Theyyam</h3><p>Discover North Kerala's living ritual traditions.</p><div class="price">₹4,999 <small style="font-size:13px;color:#657166">/ person*</small></div><a class="btn booking" data-trip="Kerala Theyyam" href="#contact">Enquire on WhatsApp</a></div></article>
+      <article class="card"><div class="photo photo-combined"><a href="images/Gokarna.jpg" target="_blank" rel="noopener noreferrer" aria-label="View full-size Gokarna coastal trek photo"><img src="images/Gokarna.jpg" alt="Travelers exploring Gokarna's rocky coastline" width="1080" height="1080" loading="lazy" decoding="async" onerror="this.style.display='none'"></a><a href="images/Dandeli.jpg" target="_blank" rel="noopener noreferrer" aria-label="View full-size Dandeli rafting photo"><img src="images/Dandeli.jpg" alt="A rafting group riding white-water rapids" width="500" height="500" loading="lazy" decoding="async" onerror="this.style.display='none'"></a><span class="photo-caption">Coast &amp; river adventures <small>View photos</small></span></div><div class="card-body"><div class="tag">BEACH + ADVENTURE • ENQUIRE FOR DURATION</div><h3>Gokarna + Dandeli</h3><p>Combine Gokarna's coastal escapes with Dandeli's river adventures in one trip.</p><div class="price">Contact for price</div><a class="btn booking" data-trip="Gokarna + Dandeli" href="#booking">Enquire on WhatsApp</a></div></article>
+      <article class="card"><a class="photo" href="images/Scuba-Diving.png" target="_blank" rel="noopener noreferrer" aria-label="View full-size illustrative scuba diving photo"><span aria-hidden="true">🌊</span><img src="images/Scuba-Diving.png" alt="A scuba diver exploring an underwater coral reef" width="684" height="514" loading="lazy" decoding="async" onerror="this.style.display='none'"><span class="photo-caption">Scuba Diving <small>Illustrative photo</small></span></a><div class="card-body"><div class="tag">UNDERWATER EXPERIENCE • ENQUIRE FOR DETAILS</div><h3>Scuba Diving</h3><p>Explore the underwater world with a scuba diving experience. Enquire for the destination, duration and availability.</p><p class="photo-credit">Photo: <a href="https://commons.wikimedia.org/wiki/File:Elkhorn_coral_Horseshoe_Reef_with_diver.png" target="_blank" rel="noopener noreferrer">Ananda Ellis / NOAA</a></p><div class="price">Contact for price</div><a class="btn booking" data-trip="Scuba Diving" href="#booking">Enquire on WhatsApp</a></div></article>
     </div><p style="text-align:center;font-size:13px;color:#6c746c;margin-top:22px">*Sample prices, subject to confirmation. Theyyam performance dates must be verified before booking.</p></div></section>
     <section class="about" id="about"><div class="wrap about-grid"><div><div class="eyebrow" style="color:#977130">ABOUT OUR JOURNEY</div><h2>Travel Far. Feel More.</h2><p>Sanchari Hub is a Bengaluru-based travel brand focused on affordable, memorable experiences. Whether you love beaches, adventurous weekends or cultural discovery, we're here to help you explore.</p></div><div class="features"><div class="feature">✓ Budget-friendly travel experiences</div><div class="feature">✓ Nature, adventure and culture</div><div class="feature">✓ Easy enquiries through WhatsApp</div></div></div></section>
     <section class="reviews" id="reviews"><div class="wrap">
@@ -290,34 +294,24 @@
 </script>
 
 <script>
-document.querySelectorAll('a[href*="wa.me/"]').forEach(function(button) {
-  const card = button.closest(".package-card, .tour-card, .card");
+const bookingSelect = document.getElementById("tripDestination");
+const bookingSection = document.getElementById("booking");
+document.querySelectorAll('.booking[data-trip]').forEach(function(button) {
+  const destination = button.dataset.trip;
+  if (!destination || !bookingSelect || !bookingSection) return;
 
-  if (!card) return;
-
-  const cardText = card.innerText.toLowerCase();
-  let destination = "";
-
-  if (cardText.includes("gokarna")) {
-    destination = "Gokarna";
-  } else if (cardText.includes("dandeli")) {
-    destination = "Dandeli";
-  } else if (cardText.includes("theyyam")) {
-    destination = "Kerala Theyyam";
+  if (![...bookingSelect.options].some(option => option.value === destination)) {
+    const customTrip = [...bookingSelect.options].find(option => option.value === 'Custom Trip');
+    bookingSelect.add(new Option(destination, destination), customTrip || null);
   }
-
-  if (!destination) return;
+  button.href = '#booking';
+  button.removeAttribute('target');
 
   button.addEventListener("click", function(event) {
     event.preventDefault();
 
-    const select = document.getElementById("tripDestination");
-    if (select) {
-      select.value = destination;
-      document.getElementById("booking").scrollIntoView({
-        behavior: "smooth"
-      });
-    }
+    bookingSelect.value = destination;
+    bookingSection.scrollIntoView({ behavior: "smooth" });
   });
 });
 </script>
