@@ -1,14 +1,14 @@
 # Current website photography
 
-Current photos are hosted locally. The downloaded originals/Commons thumbnails are not locally edited; CSS crops them to fit the layout. Source, author, and license credits are also available in the website footer under **Photography credits**. Keep those credits and applicable licenses with reused images; CC BY-SA adaptations must retain the required license.
+Package photos are hosted locally except the selected scuba original, which has a local fallback. Downloaded originals/Commons thumbnails are not locally edited; CSS crops them to fit the layout. Source, author, and license credits are also available in the website footer under **Photography credits**. Keep those credits and applicable licenses with reused images; CC BY-SA adaptations must retain the required license.
 
-## Gokarna Beach Trek — images/gokarna-trekkers.jpg
+## Gokarna Beach Trek — images/gokarna-selected.jpg
 
-- Scene: a visible group crossing coastal rocks on Paradise Beach Trail, Gokarna, Karnataka, India.
-- Photographer: **Sourabh.biswas003**.
-- Source: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:PXL_20260103_054657562.MP_Paradise_beach_gokarna_Paradise_Beach_Trail,_Gokarna,_Karnataka_581326_31.jpg).
+- User-selected photograph: **Delight india**, showing the curving Gokarna coastline.
+- Photographer: **Aleksriis**.
+- Source: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Delight_india.jpg), identified by the user's [first Google share link](https://share.google/L4exX3t2FMxQqabkn).
 - License: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
-- Local file: unmodified Commons-served 1920 × 1080 JPEG thumbnail; the original is 4032 × 2268. Display cropping only.
+- Local file: unmodified original 800 × 580 JPEG. Display cropping only.
 
 ## Individual Dandeli package — images/dandeli-adventure-hd.jpg
 
@@ -36,6 +36,31 @@ Current photos are hosted locally. The downloaded originals/Commons thumbnails a
 - Local file: unmodified Commons-served 1920 × 1308 JPEG thumbnail of the 3264 × 2224 original. Display cropping only.
 - Distinct from the individual Dandeli package photograph.
 
+## Scuba Diving — user-selected source with local fallback
+
+- Selected through the user's [second Google share link](https://share.google/sRyCCXhonAOF37lI3); visually confirmed to match the supplied preview: two divers, bright fish, and coral.
+- Full-size source: [Pushkar Cottages image, 600 × 400 WebP](https://pushkarcottages.com/wp-content/uploads/2023/11/Scuba-Diving-Murudeshwar-2.webp).
+- Source webpage: [Pushkar Cottages scuba-diving page](https://pushkarcottages.com/things-to-do/scuba-diving/).
+- The website requests the original source directly. Its original download is blocked by the cloud environment's network policy, so the page includes a local fallback in **images/scuba-selected.jpg**. That fallback is the unmodified Google cached JPEG, **275 × 183**; it has not been upscaled or described as HD.
+- Photographer and reuse license were not specified by the supplied Google preview. No Creative Commons or public-domain claim is made for this user-selected photograph. The visible footer credits its source.
+- The image remains illustrative; the package destination and marine-life encounters are confirmed separately.
+
+The logo, `Theyyam.jpg`, and the about-section `Gokarna.jpg` were supplied in the original repository. No new source/license claims are made for those pre-existing assets.
+
+---
+
+# Archived image set
+
+## Previous redesign photographs
+
+## Gokarna Beach Trek — images/gokarna-trekkers.jpg
+
+- Scene: a visible group crossing coastal rocks on Paradise Beach Trail, Gokarna, Karnataka, India.
+- Photographer: **Sourabh.biswas003**.
+- Source: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:PXL_20260103_054657562.MP_Paradise_beach_gokarna_Paradise_Beach_Trail,_Gokarna,_Karnataka_581326_31.jpg).
+- License: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+- Local file: unmodified Commons-served 1920 × 1080 JPEG thumbnail; the original is 4032 × 2268. Display cropping only.
+
 ## Scuba Diving — images/scuba-experience.jpg
 
 - Professional photograph: **Manta ray at Palmyra Atoll**.
@@ -45,11 +70,6 @@ Current photos are hosted locally. The downloaded originals/Commons thumbnails a
 - Local file: unmodified Commons-served 1920 × 1280 JPEG thumbnail of the 6720 × 4480 original. Display cropping only.
 - This is representative imagery from Palmyra Atoll National Wildlife Refuge. It does not establish the Sanchari Hub trip's location or guarantee marine-life sightings. The visible package caption and trip note identify it as illustrative.
 
-The logo, `Theyyam.jpg`, and the about-section `Gokarna.jpg` were supplied in the original repository. No new source/license claims are made for those pre-existing assets.
-
----
-
-# Archived image set
 
 The credits below are preserved for older image files and previous website versions. Their historical usage descriptions refer to those earlier versions, not the current layout.
 
