@@ -11,6 +11,7 @@ create table if not exists public.traveler_reviews (
 alter table public.traveler_reviews enable row level security;
 revoke all on public.traveler_reviews from anon, authenticated;
 grant usage on schema public to anon;
+-- The client must not select/filter approved; the SELECT RLS policy below enforces moderation.
 grant select (name, trip, rating, experience, created_at), insert (name, trip, rating, experience) on public.traveler_reviews to anon;
 grant usage on sequence public.traveler_reviews_id_seq to anon;
 drop policy if exists "Public read approved reviews" on public.traveler_reviews;

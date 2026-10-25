@@ -3,9 +3,11 @@ SANCHARI HUB - CUSTOMER REVIEWS SETUP (NO NODE.JS)
 1. Create a free project at https://supabase.com (free-tier limits apply).
 2. In Supabase open SQL Editor -> New query. Paste the contents of supabase-reviews-setup.sql and click Run.
 3. Open Project Settings -> API Keys / Data API. Copy the Project URL and publishable key (or legacy anon key). Do NOT use a secret or service_role key.
-4. Right-click index.html -> Open with Notepad. Find REVIEW_DB_URL and REVIEW_DB_KEY near the bottom. Paste both values inside their single quotes. Save with Ctrl+S.
+4. Open index.html in a text editor. Set REVIEW_DB_URL to the Project URL (for example, https://your-project.supabase.co) and REVIEW_DB_KEY to the public publishable/anon key. A copied URL ending in /rest/v1/ is also accepted. Save the file.
 5. Test the review form from your website. New submissions are private until approved.
 6. In Supabase Table Editor -> traveler_reviews, inspect each submission and set approved to true for genuine reviews. Refresh your website to see it.
 7. Before public launch, consider spam protection, privacy policy and hosting permitted for commercial use.
 
 The site works without Node.js. A database connection is required for reviews to be shared across visitors.
+
+Moderation is enforced by the database's row-level security (RLS), not a browser filter. Keep the "Public read approved reviews" policy from the SQL setup enabled. The public client reads only the five granted review columns; it must not select or filter on approved, which is reserved for moderation. New submissions omit approved and remain private until approved in Supabase.

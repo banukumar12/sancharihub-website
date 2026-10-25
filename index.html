@@ -18,7 +18,7 @@
     .btn{display:inline-block;background:var(--gold);color:#173b2c;border-radius:8px;padding:13px 22px;font-weight:800;text-decoration:none;border:0;cursor:pointer} .btn:hover{background:#e8c88a}
     section{padding:68px 6%} .wrap{max-width:1180px;margin:auto} .section-head{text-align:center;margin-bottom:30px} .section-head h2{font-size:clamp(27px,4vw,39px);margin:0 0 7px}.section-head p{margin:0;color:#617066}
     .cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:25px}.card{background:white;border-radius:17px;overflow:hidden;box-shadow:0 9px 32px #142c2115;display:flex;flex-direction:column}
-    .photo{height:235px;background:linear-gradient(145deg,#447e69,#b8a66b);display:grid;place-items:center;position:relative}.photo img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}.photo span{color:white;font-size:58px}
+    .photo{height:300px;background:linear-gradient(145deg,#447e69,#b8a66b);display:grid;place-items:center;position:relative;overflow:hidden;text-decoration:none;flex-shrink:0}.photo img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}.photo>span{color:white;font-size:58px}.photo:focus-visible{outline:3px solid var(--gold);outline-offset:-3px}.photo .photo-caption{position:absolute;inset:auto 0 0;padding:35px 18px 15px;background:linear-gradient(transparent,#000b);font-size:16px;font-weight:700;display:flex;justify-content:space-between;align-items:end;gap:10px}.photo-caption small{font-size:12px;white-space:nowrap;font-weight:normal}.photo-theyyam img{object-position:center 35%}
     .card-body{padding:23px;display:flex;flex-direction:column;flex:1}.card h3{margin:0 0 7px;font-size:23px}.card p{margin:5px 0;color:#5c685e}.tag{font-size:13px;font-weight:bold;color:var(--forest2)}.price{font-size:25px;font-weight:800;color:#946c24;margin:12px 0}.card .btn{margin-top:auto;text-align:center}
     .about{background:#e9efe8}.about-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:38px;align-items:center}.about h2{font-size:36px;margin:0 0 12px}.features{display:grid;gap:12px}.feature{background:white;padding:17px 19px;border-radius:12px;font-weight:700}
     .reviews{background:#fffaf0}.review-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;margin-top:28px}.review-card{background:white;border:1px solid #e5e4d8;border-radius:16px;padding:25px;text-align:left;box-shadow:0 6px 18px #173b2c0a}.review-card h3{margin:0 0 8px;font-size:18px}.review-card p{color:#5d695f;margin:0 0 16px}.review-note{color:#657166;font-size:14px;text-align:center;max-width:720px;margin:22px auto}.review-actions{text-align:center;margin-top:24px}
@@ -38,9 +38,9 @@
   <main>
     <div class="hero"><div class="hero-inner"><div class="eyebrow">Explore more • Spend less • Travel better</div><h1>Your Next Adventure Starts Here.</h1><p>Unforgettable beach escapes, wild adventures and cultural journeys from Bengaluru.</p><a class="btn" href="#packages">Explore Our Trips ↓</a></div></div>
     <section id="packages"><div class="wrap"><div class="section-head"><h2>Explore Our Tour Packages</h2><p>Find your next story with Sanchari Hub</p></div><div class="cards">
-      <article class="card"><div class="photo"><span>🏖️</span><img src="images/Gokarna.jpg" alt="Gokarna beach" onerror="this.style.display='none'"></div><div class="card-body"><div class="tag">BEACH ESCAPE • 2 DAYS / 1 NIGHT</div><h3>Gokarna</h3><p>Coastal views, beautiful beaches and sunset memories.</p><div class="price">₹3,999 <small style="font-size:13px;color:#657166">/ person*</small></div><a class="btn booking" data-trip="Gokarna" href="#contact">Enquire on WhatsApp</a></div></article>
-      <article class="card"><div class="photo"><span>🌿</span><img src="images/Dandeli.jpg" alt="Dandeli adventure" onerror="this.style.display='none'"></div><div class="card-body"><div class="tag">ADVENTURE • 2 DAYS / 1 NIGHT</div><h3>Dandeli</h3><p>Nature, camping and thrilling river experiences.</p><div class="price">₹3,999 <small style="font-size:13px;color:#657166">/ person*</small></div><a class="btn booking" data-trip="Dandeli" href="#contact">Enquire on WhatsApp</a></div></article>
-      <article class="card"><div class="photo"><span>🎭</span><img src="images/Theyyam.jpg" alt="Traditional Kerala Theyyam performance" onerror="this.style.display='none'"></div><div class="card-body"><div class="tag">CULTURE • 2 DAYS / 1 NIGHT</div><h3>Kerala Theyyam</h3><p>Discover North Kerala's living ritual traditions.</p><div class="price">₹4,999 <small style="font-size:13px;color:#657166">/ person*</small></div><a class="btn booking" data-trip="Kerala Theyyam" href="#contact">Enquire on WhatsApp</a></div></article>
+      <article class="card"><a class="photo" href="images/Gokarna.jpg" target="_blank" rel="noopener noreferrer" aria-label="View full-size Gokarna coastal trek photo"><span aria-hidden="true">🏖️</span><img src="images/Gokarna.jpg" alt="Travelers trekking along the rocky Gokarna coast beside the sea" width="1080" height="1080" loading="lazy" decoding="async" onerror="this.style.display='none'"><span class="photo-caption">Gokarna coast <small>View photo</small></span></a><div class="card-body"><div class="tag">BEACH ESCAPE • 2 DAYS / 1 NIGHT</div><h3>Gokarna</h3><p>Coastal views, beautiful beaches and sunset memories.</p><div class="price">₹3,999 <small style="font-size:13px;color:#657166">/ person*</small></div><a class="btn booking" data-trip="Gokarna" href="#contact">Enquire on WhatsApp</a></div></article>
+      <article class="card"><a class="photo" href="images/Dandeli.jpg" target="_blank" rel="noopener noreferrer" aria-label="View full-size Dandeli river rafting photo"><span aria-hidden="true">🌿</span><img src="images/Dandeli.jpg" alt="A group rafting through white-water rapids surrounded by rocks and forest" width="500" height="500" loading="lazy" decoding="async" onerror="this.style.display='none'"><span class="photo-caption">Dandeli rafting <small>View photo</small></span></a><div class="card-body"><div class="tag">ADVENTURE • 2 DAYS / 1 NIGHT</div><h3>Dandeli</h3><p>Nature, camping and thrilling river experiences.</p><div class="price">₹3,999 <small style="font-size:13px;color:#657166">/ person*</small></div><a class="btn booking" data-trip="Dandeli" href="#contact">Enquire on WhatsApp</a></div></article>
+      <article class="card"><a class="photo photo-theyyam" href="images/Theyyam.jpg" target="_blank" rel="noopener noreferrer" aria-label="View full-size Kerala Theyyam performance photo"><span aria-hidden="true">🎭</span><img src="images/Theyyam.jpg" alt="A Kerala Theyyam performer in an ornate red headdress surrounded by flames" width="452" height="678" loading="lazy" decoding="async" onerror="this.style.display='none'"><span class="photo-caption">Kerala Theyyam <small>View photo</small></span></a><div class="card-body"><div class="tag">CULTURE • 2 DAYS / 1 NIGHT</div><h3>Kerala Theyyam</h3><p>Discover North Kerala's living ritual traditions.</p><div class="price">₹4,999 <small style="font-size:13px;color:#657166">/ person*</small></div><a class="btn booking" data-trip="Kerala Theyyam" href="#contact">Enquire on WhatsApp</a></div></article>
     </div><p style="text-align:center;font-size:13px;color:#6c746c;margin-top:22px">*Sample prices, subject to confirmation. Theyyam performance dates must be verified before booking.</p></div></section>
     <section class="about" id="about"><div class="wrap about-grid"><div><div class="eyebrow" style="color:#977130">ABOUT OUR JOURNEY</div><h2>Travel Far. Feel More.</h2><p>Sanchari Hub is a Bengaluru-based travel brand focused on affordable, memorable experiences. Whether you love beaches, adventurous weekends or cultural discovery, we're here to help you explore.</p></div><div class="features"><div class="feature">✓ Budget-friendly travel experiences</div><div class="feature">✓ Nature, adventure and culture</div><div class="feature">✓ Easy enquiries through WhatsApp</div></div></div></section>
     <section class="reviews" id="reviews"><div class="wrap">
@@ -77,15 +77,18 @@
     });
     ['general-whatsapp','floating-whatsapp','review-whatsapp'].forEach(id => {
       const link=document.getElementById(id);
+      if (!link) return;
       if(configured){link.href=whatsappLink(id === 'review-whatsapp' ? 'Hi Sanchari Hub! I would like to share feedback about my trip.' : 'Hi Sanchari Hub! I would like to know about upcoming trips.');link.target='_blank';link.rel='noopener noreferrer';}
     });
   </script>
   <script>
     // FREE REVIEW DATABASE: Paste your Supabase Project URL and publishable/anon key below.
     // Never put a Supabase service_role or secret key in this file.
-    const REVIEW_DB_URL = 'https://flkkitterrglkvqrzdgj.supabase.co/rest/v1/';
+    const REVIEW_DB_URL = 'https://flkkitterrglkvqrzdgj.supabase.co';
     const REVIEW_DB_KEY = 'sb_publishable_6b3UMi2jiTxkKvkE4Ds3Ng_EelUWCOr';
     const reviewsConfigured = REVIEW_DB_URL.startsWith('https://') && REVIEW_DB_KEY.length > 20;
+    // Accept the project URL or a copied REST base URL, with or without a trailing slash.
+    const reviewsEndpoint = REVIEW_DB_URL.replace(/\/+$/, '').replace(/\/rest\/v1$/, '') + '/rest/v1/traveler_reviews';
     let selectedRating = 0;
     const reviewMessage = document.getElementById('review-message');
     const starButtons = [...document.querySelectorAll('#star-choices button')];
@@ -110,7 +113,8 @@
         return;
       }
       try {
-        const response = await fetch(REVIEW_DB_URL + '/rest/v1/traveler_reviews?select=name,trip,rating,experience,created_at&approved=eq.true&order=created_at.desc&limit=60', {
+        // RLS exposes only approved reviews; anon cannot select/filter the approved column.
+        const response = await fetch(reviewsEndpoint + '?select=name,trip,rating,experience,created_at&order=created_at.desc&limit=60', {
           headers: { apikey: REVIEW_DB_KEY, Authorization: 'Bearer ' + REVIEW_DB_KEY }
         });
         if (!response.ok) throw new Error('Could not load reviews');
@@ -146,7 +150,7 @@
         experience: document.getElementById('review-text').value.trim()
       };
       try {
-        const response = await fetch(REVIEW_DB_URL + '/rest/v1/traveler_reviews', {
+        const response = await fetch(reviewsEndpoint, {
           method: 'POST',
           headers: { apikey: REVIEW_DB_KEY, Authorization: 'Bearer ' + REVIEW_DB_KEY, 'Content-Type': 'application/json', Prefer: 'return=minimal' },
           body: JSON.stringify(payload)
